@@ -114,11 +114,19 @@
           <div class="row">
             <div class="col-2">
               <div class="DadosModalEmpresas">
-                <img id="logoModalEmpresa" src="../../assets/images/usuario.JPG" alt="Logo Empresa">
-                <p>Nome Empresa</p>
-                <p>Rio Claro/SP</p>
-                <p>(19) 1234-5678</p>
-                <p>email@email.com</p>
+                <?php $con = new PDO("mysql:host=localhost;dbname=aydy", "root", "");
+                  $emp = 'SELECT VAG_EMP, EMP_FANTASIA, EMP_NUMERO, EMP_CIDADE, EMP_ESTADO, EMP_EMAIL, EMP_IMG FROM TB_VAGA INNER JOIN TB_EMPRESA ON VAG_EMP = EMP_CNPJ WHERE EMP_CNPJ = VAG_EMP';
+                
+                  foreach($con->query($emp) as $empresas)
+                  {
+
+                    echo "<img id='logoModalEmpresa' src='../../assets/images/usuario.JPG' alt='Logo Empresa'>";
+                    echo "<p>".$empresas['EMP_FANTASIA']."</p>";
+                    echo "<p>".$empresas['EMP_CIDADE']."/".$empresas['EMP_ESTADO']."</p>";
+                    echo "<p>".$empresas['EMP_NUMERO']."</p>";
+                    echo "<p>".$empresas['EMP_EMAIL']."</p>";
+                  }
+                ?>
               </div>
               
               <hr>
