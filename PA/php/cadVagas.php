@@ -30,9 +30,10 @@
                 //salva no banco
                 move_uploaded_file($_FILES["imgVaga"]['tmp_name'], $arquivo_nome);
 
+                $emp = intval($con->prepare("SELECT EMP_ID FROM TB_EMPRESA WHERE EMP_CNPJ = '$empresa'"));
                 $stmt = $con->prepare("INSERT INTO TB_VAGA (VAG_NOME, VAG_EMP, VAG_AREA, VAG_CIDADE, VAG_ESTADO, VAG_REGIME, VAG_DATAINICIO, VAG_DATAFIM, VAG_REMUNERACAO, VAG_DESCRICAO, VAG_IMG) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 $stmt->bindParam (1, $nome);
-                $stmt->bindParam (2, $empresa);
+                $stmt->bindParam (2, $emp);
                 $stmt->bindParam (3, $area);
                 $stmt->bindParam (4, $cidade);
                 $stmt->bindParam (5, $estado);

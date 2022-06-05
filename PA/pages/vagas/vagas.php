@@ -115,12 +115,13 @@
             <div class="col-2">
               <div class="DadosModalEmpresas">
                 <?php $con = new PDO("mysql:host=localhost;dbname=aydy", "root", "");
-                  $emp = 'SELECT VAG_EMP, EMP_FANTASIA, EMP_NUMERO, EMP_CIDADE, EMP_ESTADO, EMP_EMAIL, EMP_IMG FROM TB_VAGA INNER JOIN TB_EMPRESA ON VAG_EMP = EMP_CNPJ WHERE EMP_CNPJ = VAG_EMP';
+                  $emp = 'SELECT VAG_EMP, EMP_FANTASIA, EMP_NUMERO, EMP_CIDADE, EMP_ESTADO, EMP_EMAIL, EMP_IMG FROM TB_VAGA INNER JOIN TB_EMPRESA ON VAG_EMP = EMP_ID WHERE EMP_ID = VAG_EMP LIMIT 1';
                 
                   foreach($con->query($emp) as $empresas)
                   {
-
-                    echo "<img id='logoModalEmpresa' src='../../assets/images/usuario.JPG' alt='Logo Empresa'>";
+                    $urlImg = $linha['VAG_IMG'];
+                    $caminho = substr($urlImg, 22, 100); 
+                    echo "<img id='imagemVaga' src='../../$caminho' alt='Imagem Vaga'>";
                     echo "<p>".$empresas['EMP_FANTASIA']."</p>";
                     echo "<p>".$empresas['EMP_CIDADE']."/".$empresas['EMP_ESTADO']."</p>";
                     echo "<p>".$empresas['EMP_NUMERO']."</p>";
