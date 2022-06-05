@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
+  <title>Aydy - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/app.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/hero.css">
+  <link rel="stylesheet" href="../../css/home.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../css/vagas.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <my-header></my-header>
+
+<section class="about_section layout_paddingMenor">
+  <div class="container-sm ContainarAjustes">
+    <div class="divTitulo">
+      <h1>Não sabe como montar seu curriculum?</h1>
+      <h4>Deixa que nós te ajudamos</h4>
+    </div>
+    <br>
+    <br>
+    <form class="row g-3">
+      <div class="row spaceRow">
+        <div class="col-md-6">
+          <label for="nomeCurriculum" class="form-label">Nome Completo</label>
+          <input type="name" class="form-control" id="nomeCurriculum">
+        </div>
+        <div class="col-md-6">
+          <label for="emailCurriculum" class="form-label">E-mail</label>
+          <input type="name" class="form-control" id="emailCurriculum">
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="col-md-2">
+          <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+          <input type="date" class="form-control" id="nascimentoCurriculum">
+        </div>
+        <div class="col-md-2">
+          <label for="telefoneCurriculum" class="form-label">Telefone</label>
+          <input type="text" class="form-control" id="telefoneCurriculum">
+        </div>
+        <div class="col-md-4">
+          <label for="cidadeCurriculum" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="cidadeCurriculum">
+        </div>
+        <div class="col-md-4">
+          <label for="cepCurriculum" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cepCurriculum">
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="col-md-10">
+          <label for="enderecoCurriculum" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="enderecoCurriculum">
+        </div>
+        <div class="col-md-2">
+          <label for="numeroCurriculum" class="form-label">Número</label>
+          <input type="number" class="form-control" id="numeroCurriculum">
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Fale um pouco sobre você" id="descricaoCurriculum" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Fale um pouco sobre você</label>
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="col-md-4">
+          <label for="formacaoCurriculum" class="form-label">Formação</label>
+          <input type="text" class="form-control" id="formacaoCurriculum">
+        </div>
+        <div class="col-md-4">
+          <label for="instituicaoCurriculum" class="form-label">Instituição</label>
+          <input type="text" class="form-control" id="instituicaoCurriculum">
+        </div>
+        <div class="col-md-2">
+          <label for="dtInicioCurriculum" class="form-label">Data Inicio</label>
+          <input type="month" class="form-control" id="dtInicioCurriculum">
+        </div>
+        <div class="col-md-2">
+          <label for="dtFimCurriculum" class="form-label">Data Término</label>
+          <input type="month" class="form-control" id="dtFimCurriculum">
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="col-md-4">
+          <label for="formacaoCurriculum2" class="form-label">Formação</label>
+          <input type="text" class="form-control" id="formacaoCurriculum2">
+        </div>
+        <div class="col-md-4">
+          <label for="instituicaoCurriculum2" class="form-label">Instituição</label>
+          <input type="text" class="form-control" id="instituicaoCurriculum2">
+        </div>
+        <div class="col-md-2">
+          <label for="dtInicioCurriculum2" class="form-label">Data Inicio</label>
+          <input type="month" class="form-control" id="dtInicioCurriculum2">
+        </div>
+        <div class="col-md-2">
+          <label for="dtFimCurriculum2" class="form-label">Data Término</label>
+          <input type="month" class="form-control" id="dtFimCurriculum2">
+        </div>
+      </div>
+
+      <div class="divTitulo">
+        <p>Experiência Profissional</p>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="col-md-4">
+          <label for="funcaoCurriculum" class="form-label">Função</label>
+          <input type="text" class="form-control" id="funcaoCurriculum">
+        </div>
+        <div class="col-md-4">
+          <label for="empresaCurriculum" class="form-label">Empresa</label>
+          <input type="text" class="form-control" id="empresaCurriculum">
+        </div>
+        <div class="col-md-2">
+          <label for="dtInicioEmpCurriculum" class="form-label">Data Inicio</label>
+          <input type="month" class="form-control" id="dtInicioEmpCurriculum">
+        </div>
+        <div class="col-md-2">
+          <label for="dtFimEmpCurriculum" class="form-label">Data Término</label>
+          <input type="month" class="form-control" id="dtFimEmpCurriculum">
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Descriçao das atividades" id="descricaoEmpCurriculum" style="height: 70px"></textarea>
+          <label for="floatingTextarea2">Descriçao das atividades</label>
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="col-md-4">
+          <label for="funcaoCurriculum2" class="form-label">Função</label>
+          <input type="text" class="form-control" id="funcaoCurriculum2">
+        </div>
+        <div class="col-md-4">
+          <label for="empresaCurriculum2" class="form-label">Empresa</label>
+          <input type="text" class="form-control" id="empresaCurriculum2">
+        </div>
+        <div class="col-md-2">
+          <label for="dtInicioEmpCurriculum2" class="form-label">Data Inicio</label>
+          <input type="month" class="form-control" id="dtInicioEmpCurriculum2">
+        </div>
+        <div class="col-md-2">
+          <label for="dtFimEmpCurriculum2" class="form-label">Data Término</label>
+          <input type="month" class="form-control" id="dtFimEmpCurriculum2">
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Descriçao das atividades" id="descricaoEmpCurriculum2" style="height: 70px"></textarea>
+          <label for="floatingTextarea2">Descriçao das atividades</label>
+        </div>
+      </div>
+
+      <div>
+        <p class="divTitulo">Idiomas</p>
+      </div>
+      <div class="row spaceRow">
+        <div class="col-md-3">
+          <label for="idiomaCurriculum" class="form-label">Idioma</label>
+          <input type="text" class="form-control" id="idiomaCurriculum">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Nível</label>
+          <select class="form-select" id="nivelIdiomaCurriculum">
+            <option value="1">Básico</option>
+            <option value="2">Intermediário</option>
+            <option value="3">Avançado</option>
+            <option value="4">Fluente</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="idiomaCurriculum2" class="form-label">Idioma</label>
+          <input type="text" class="form-control" id="idiomaCurriculum2">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Nível</label>
+          <select class="form-select" id="nivelIdiomaCurriculum2">
+            <option value="1">Básico</option>
+            <option value="2">Intermediário</option>
+            <option value="3">Avançado</option>
+            <option value="4">Fluente</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row spaceRow">
+        <div class="col-md-3">
+          <label for="idiomaCurriculum3" class="form-label">Idioma</label>
+          <input type="text" class="form-control" id="idiomaCurriculum3">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Nível</label>
+          <select class="form-select" id="nivelIdiomaCurriculum3">
+            <option value="1">Básico</option>
+            <option value="2">Intermediário</option>
+            <option value="3">Avançado</option>
+            <option value="4">Fluente</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="idiomaCurriculum4" class="form-label">Idioma</label>
+          <input type="text" class="form-control" id="idiomaCurriculum4">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Nível</label>
+          <select class="form-select" id="nivelIdiomaCurriculum4">
+            <option value="1">Básico</option>
+            <option value="2">Intermediário</option>
+            <option value="3">Avançado</option>
+            <option value="4">Fluente</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btnCadastrar">Gerar Curriculum</button>
+    </form>
+  </div>
+</section>
+
+<my-footer></my-footer>
+
+<script src="../../js/myHeader.js" defer></script>
+<script src="../../js/myFooter.js" defer></script>
+
+</body>
+
+</html>

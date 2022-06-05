@@ -1,0 +1,21 @@
+
+footer{
+    background-color: #082465;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 0rem;
+    /* position: static; */
+    bottom: 0;
+    width: 100%;
+}
+
+.iconFooter{
+    width: 30px;
+    display: inline;
+    margin-left: 1rem;
+}
+
+footer a{
+    color: transparent;
+}

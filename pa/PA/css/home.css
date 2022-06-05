@@ -1,0 +1,89 @@
+.cardGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.card{
+    border-radius: 12px;
+    padding: 2rem;
+    width: 312px;
+    text-align: justify;
+    border: 1px solid #8eb4dd;
+    box-shadow: 0 0 8px #8eb4dd63;
+}
+
+.titleCard{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #504eca;
+    margin: 1rem;
+}
+
+.icon{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnCard{
+    background-color: #8eb4dd;
+    font-size: 18px;
+    color: white;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto 0em auto;
+
+}
+
+
+.profileAutor{
+    height: 150px;
+    width: 155px;
+    border-radius: 100%;
+    color: gray;
+    display: flex;
+    filter: grayscale(1);
+}
+
+#autoresBackground{
+    /* background: url('../images/gradiantePlexus.webp') no-repeat;
+    background-size: 100%; */
+
+    background: #082465;
+}
+
+#autores{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#autoresCitacoes{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 22px;
+    /* color: #CE7B91; */
+    color: #FA9372;
+    margin-bottom: 4rem;
+}
+
+#autoresTitle{
+    color: #fff;
+    padding: 3rem 0 0 0;
+}
+
+#textAutores{
+    color: #fff
+}
+
+.autoresName{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #fff;
+    font-size: 17px;
+}
+
+.imagesHome{
+    margin-top: 8rem;
+}

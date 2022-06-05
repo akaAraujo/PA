@@ -1,0 +1,46 @@
+.alignCenter{
+    text-align: center;
+}
+
+#nomeAluno{
+    font-weight: bold;
+    font-size: 35px;
+    color: #082465;
+}
+
+#areaInteresse{
+    line-height: 0;
+    font-size: 20px;
+    text-decoration: 1px underline; 
+    margin-bottom: 3rem;
+}
+
+#area{
+    font-size: 18px;
+    color: #002e60;
+    text-decoration: underline;
+}
+
+.titulosCurriculo{
+    color: #002e60;
+}
+
+.contato{
+    font-weight: bold;
+    color: #002e60;
+}
+
+.areaContato{
+    border-right: 0.5px solid gray;
+}
+
+.tituloContato{
+    display: flex;
+    justify-content: center;
+    text-decoration: 1px underline;
+}
+
+.areaDados{
+    padding: 2em;
+    left: 1rem;
+}

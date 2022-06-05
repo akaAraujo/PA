@@ -1,0 +1,184 @@
+.cardVagas{
+    border: 1px solid #8eb4dd;
+    box-shadow: 0 0 8px #8eb4dd63;
+    background: #fff;
+    border-radius: 20px;
+    width: 410px;
+    height: 240px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+}
+
+.vagasSobre{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.vagasDescricao{
+    height: 6rem;
+}
+
+.vagasChips{}
+
+.vagasMaisSobre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.spaceRow{
+    padding: 0.2rem;
+}
+
+#remuneracao{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#remuneracaoVaga{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#descVagas{
+    text-align: justify;
+    color: #545454;
+}
+
+#btnFiltroPlus{
+    border-radius: 40px;
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+}
+
+#filtros{
+    text-align: center;
+}
+
+#filtros input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+#filtros input::placeholder{
+    padding: auto 1rem;
+}
+
+#filtros select{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+#filtros img{
+    width: 25px;
+    height: 25px;
+}
+
+#filtros button{
+    border: 1px solid gray;
+    background: transparent;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 6px;
+}
+
+.btnCadastrar{
+    width: 8rem;
+    height: 3rem;
+    border: 0 solid #009550;
+    background: #009550;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-right: 1.5rem;
+  }
+
+.alignRight{
+    text-align: right;
+}
+
+.iconVagas{
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.iconVagas button{
+    margin-right: 1rem;
+    width: 30px; 
+    height: 30px;
+}
+
+#titleVaga{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dadosVagas{
+    border: 1px solid lightgrey;
+    padding: 1em;
+    border-radius: 1rem;
+}
+
+.DadosModalEmpresas{
+    text-align: -webkit-center;
+}
+
+#logoModalEmpresa{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px grey;
+    margin-bottom: 1rem;
+}
+
+.btnModalAction{
+    margin: 3rem auto;
+}
+
+.btnModal{
+    margin-bottom: 0.5rem;
+    border: 0 solid;
+    background: transparent;
+}
+
+.DadosModalEmpresas{
+    text-align: -webkit-center;
+}
+
+#logoModalEmpresa{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px grey;
+    margin-bottom: 1rem;
+}
+
+.btnModalClose{
+    border: 0 solid;
+    background: #082465;
+    width: 7rem;
+    height: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.campTitulos{
+    font-weight: bold;
+}
+
+#imagemVaga{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    width: 870px;
+    height: auto;
+}

@@ -1,0 +1,71 @@
+.hero2{
+    /* background: #667db6;
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); */
+   /*  */
+   background: rgb(142,180,221);
+background: linear-gradient(90deg, rgba(142,180,221,1) 65%, rgba(0,0,0,1) 65%);
+   /*  */
+    /* background: #9c9c9c7e; */
+    /* position: fixed; */
+    position: absolute;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100%;
+    margin-top: -1rem;
+}
+
+.hero{
+    /* background: #fff;
+    background: linear-gradient(90deg, #fff 65%, #8eb4dd 65%); */
+    display: flow-root;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+#logoHero{
+    width: 400px;
+    height: 350px;
+    border-radius: 12%;
+    margin-top: -20rem;
+}
+
+.imgHero{
+    font-size: 30px;
+    line-height: 90px;
+    float: right;
+    margin-right: 28rem;
+}
+
+.heroHome{
+    margin-left: 16rem;
+    margin-top: 12rem;
+    text-align: center;
+}
+
+#titleHero{
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;}
+
+#subTitle{
+    font-size: 20px;
+}
+
+#btnEntrar{
+    background-color: #8eb4dd;
+    font-size: 18px;
+    color: white;
+    border: 0;
+    margin-top: 2rem;
+}
+
+#btnVejamais{
+    background: transparent;
+    border: 0;
+    /* color: ; */
+    font-size: 16px;
+}

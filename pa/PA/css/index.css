@@ -1,0 +1,24 @@
+.btnOptions{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 16px;
+    border: 0px solid;
+    box-shadow: 0 0 8px #1d2e54;
+    cursor: pointer;
+    margin-left: 5rem;
+    color: #082465;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+    background: #ffffff ;
+}
+
+.btnOptions:hover{
+    background: #8eb4dd;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.gridCenter{
+    text-align: center;
+}

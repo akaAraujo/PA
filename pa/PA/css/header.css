@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Baloo+2:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+header{
+/* background-color: rgba(0, 0, 0, 0.06); */
+  background-color: #082465;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  /* opacity : 0.5; */
+  z-index: 1;
+  /* backdrop-filter: blur(16px); */
+}
+
+.container-header {
+  height: 2000px;
+  max-width: 1421px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-header:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.menu {
+  font-size: 30px;
+  float: left;
+  line-height: 90px;
+}
+
+
+.menu img {
+/* padding: 10px 0;
+width: 278px;
+height: 235px;
+transition: all 0.6s ease;
+margin-top: -5rem; */
+padding: 10px 0;
+    width: 230px;
+    transition: all 0.6s ease;
+}
+
+#btnLogin{
+    border: 0 solid;
+    color: #fff;
+    background: #8eb4dd;
+    cursor: pointer;
+}
+
+#btnLogin:hover{
+  text-decoration: underline #fff;
+}
+
+#linkFHO{
+  color: #fff;
+}
+
+
+ul, li {
+  font-family: "Assistant", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul {
+  float: right;
+  line-height: 90px;
+}
+
+li {
+  float: left;
+  margin-right: 55px;
+}
+
+li:last-of-type {
+  margin-right: 0;
+}
+
+li a {
+  color: #000;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+
+
